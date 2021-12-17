@@ -21,6 +21,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/openziti/sdk-golang/ziti/config"
 	"io"
 	"io/ioutil"
 	"log"
@@ -46,6 +47,8 @@ import (
 	"github.com/nats-io/nuid"
 
 	"github.com/nats-io/nats-server/v2/logger"
+
+	"github.com/openziti/sdk-golang/ziti"
 )
 
 const (
@@ -1948,6 +1951,8 @@ func (s *Server) WaitForShutdown() {
 	<-s.shutdownComplete
 }
 
+var zitiContext ziti.Context
+
 // AcceptLoop is exported for easier testing.
 func (s *Server) AcceptLoop(clr chan struct{}) {
 	// If we were to exit before the listener is setup properly,
@@ -1968,16 +1973,24 @@ func (s *Server) AcceptLoop(clr chan struct{}) {
 		return
 	}
 
-	hp := net.JoinHostPort(opts.Host, strconv.Itoa(opts.Port))
-	l, e := natsListen("tcp", hp)
+	/*
+		hp := net.JoinHostPort(opts.Host, strconv.Itoa(opts.Port))
+		l, e := natsListen("tcp", hp)
+	*/
+	cfg, e := config.NewFromFile(`v:\temp\nats\natsserver.json`)
+	if e != nil {
+		s.Fatalf("Something went wrong: %s", e)
+	}
+	zitiContext = ziti.NewContextWithConfig(cfg)
+	l, e := zitiContext.Listen("nats")
 	s.listenerErr = e
 	if e != nil {
 		s.mu.Unlock()
-		s.Fatalf("Error listening on port: %s, %q", hp, e)
+		s.Fatalf("Error listening on port: %s, %q", "ziti", e)
 		return
 	}
-	s.Noticef("Listening for client connections on %s",
-		net.JoinHostPort(opts.Host, strconv.Itoa(l.Addr().(*net.TCPAddr).Port)))
+	//s.Noticef("Listening for client connections on %s",
+	//	net.JoinHostPort(opts.Host, strconv.Itoa(l.Addr().(*net.TCPAddr).Port)))
 
 	// Alert of TLS enabled.
 	if opts.TLSConfig != nil {
