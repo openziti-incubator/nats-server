@@ -1,11 +1,50 @@
-# github.com/golang/protobuf v1.4.2
+# github.com/StackExchange/wmi v0.0.0-20210224194228-fe8f1750fd46
+github.com/StackExchange/wmi
+# github.com/cenkalti/backoff/v4 v4.1.2
+github.com/cenkalti/backoff/v4
+# github.com/emirpasic/gods v1.12.0
+github.com/emirpasic/gods/containers
+github.com/emirpasic/gods/trees
+github.com/emirpasic/gods/trees/btree
+github.com/emirpasic/gods/utils
+# github.com/go-ole/go-ole v1.2.5
+github.com/go-ole/go-ole
+github.com/go-ole/go-ole/oleutil
+# github.com/golang-jwt/jwt v3.2.2+incompatible
+github.com/golang-jwt/jwt
+# github.com/golang/protobuf v1.5.2
 ## explicit
+github.com/golang/protobuf/proto
+github.com/golang/protobuf/ptypes
+github.com/golang/protobuf/ptypes/any
+github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/timestamp
+# github.com/google/uuid v1.3.0
+github.com/google/uuid
+# github.com/influxdata/influxdb1-client v0.0.0-20191209144304-8bf82d3c094d
+github.com/influxdata/influxdb1-client
+github.com/influxdata/influxdb1-client/models
+github.com/influxdata/influxdb1-client/pkg/escape
 # github.com/klauspost/compress v1.13.4
 ## explicit
 github.com/klauspost/compress/s2
+# github.com/mattn/go-colorable v0.1.12
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.14
+github.com/mattn/go-isatty
+# github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d
+github.com/mgutz/ansi
+# github.com/michaelquigley/pfxlog v0.6.3
+github.com/michaelquigley/pfxlog
+# github.com/miekg/pkcs11 v1.0.3
+github.com/miekg/pkcs11
 # github.com/minio/highwayhash v1.0.1
 ## explicit
 github.com/minio/highwayhash
+# github.com/mitchellh/go-ps v1.0.0
+github.com/mitchellh/go-ps
+# github.com/mitchellh/mapstructure v1.4.3
+github.com/mitchellh/mapstructure
 # github.com/nats-io/jwt/v2 v2.2.0
 ## explicit
 github.com/nats-io/jwt/v2
@@ -20,27 +59,157 @@ github.com/nats-io/nkeys
 # github.com/nats-io/nuid v1.0.1
 ## explicit
 github.com/nats-io/nuid
+# github.com/netfoundry/secretstream v0.1.2
+github.com/netfoundry/secretstream
+github.com/netfoundry/secretstream/kx
+# github.com/openziti/foundation v0.16.9
+github.com/openziti/foundation/channel2
+github.com/openziti/foundation/common
+github.com/openziti/foundation/common/constants
+github.com/openziti/foundation/event
+github.com/openziti/foundation/identity/certtools
+github.com/openziti/foundation/identity/engines/parsec
+github.com/openziti/foundation/identity/engines/pkcs11
+github.com/openziti/foundation/identity/identity
+github.com/openziti/foundation/metrics
+github.com/openziti/foundation/metrics/metrics_pb
+github.com/openziti/foundation/trace
+github.com/openziti/foundation/trace/pb
+github.com/openziti/foundation/transport
+github.com/openziti/foundation/transport/tls
+github.com/openziti/foundation/util/concurrenz
+github.com/openziti/foundation/util/cowslice
+github.com/openziti/foundation/util/errorz
+github.com/openziti/foundation/util/info
+github.com/openziti/foundation/util/iomonad
+github.com/openziti/foundation/util/sequence
+github.com/openziti/foundation/util/sequencer
+github.com/openziti/foundation/util/stringz
+github.com/openziti/foundation/util/tlz
+github.com/openziti/foundation/util/uuidz
+# github.com/openziti/sdk-golang v0.15.123
+## explicit
+github.com/openziti/sdk-golang/ziti
+github.com/openziti/sdk-golang/ziti/config
+github.com/openziti/sdk-golang/ziti/edge
+github.com/openziti/sdk-golang/ziti/edge/api
+github.com/openziti/sdk-golang/ziti/edge/impl
+github.com/openziti/sdk-golang/ziti/edge/posture
+github.com/openziti/sdk-golang/ziti/sdkinfo
+github.com/openziti/sdk-golang/ziti/signing
+# github.com/orcaman/concurrent-map v0.0.0-20190826125027-8c72a8bb44f6
+github.com/orcaman/concurrent-map
+# github.com/parallaxsecond/parsec-client-go v0.0.0-20210416104105-e2d188152601
+github.com/parallaxsecond/parsec-client-go/interface/auth
+github.com/parallaxsecond/parsec-client-go/interface/connection
+github.com/parallaxsecond/parsec-client-go/interface/operations
+github.com/parallaxsecond/parsec-client-go/interface/operations/listauthenticators
+github.com/parallaxsecond/parsec-client-go/interface/operations/listkeys
+github.com/parallaxsecond/parsec-client-go/interface/operations/listopcodes
+github.com/parallaxsecond/parsec-client-go/interface/operations/listproviders
+github.com/parallaxsecond/parsec-client-go/interface/operations/ping
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaaeaddecrypt
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaaeadencrypt
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaalgorithm
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaasymmetricdecrypt
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaasymmetricencrypt
+github.com/parallaxsecond/parsec-client-go/interface/operations/psacipherdecrypt
+github.com/parallaxsecond/parsec-client-go/interface/operations/psacipherencrypt
+github.com/parallaxsecond/parsec-client-go/interface/operations/psadestroykey
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaexportkey
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaexportpublickey
+github.com/parallaxsecond/parsec-client-go/interface/operations/psageneratekey
+github.com/parallaxsecond/parsec-client-go/interface/operations/psageneraterandom
+github.com/parallaxsecond/parsec-client-go/interface/operations/psahashcompute
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaimportkey
+github.com/parallaxsecond/parsec-client-go/interface/operations/psakeyattributes
+github.com/parallaxsecond/parsec-client-go/interface/operations/psamaccompute
+github.com/parallaxsecond/parsec-client-go/interface/operations/psamacverify
+github.com/parallaxsecond/parsec-client-go/interface/operations/psarawkeyagreement
+github.com/parallaxsecond/parsec-client-go/interface/operations/psasignhash
+github.com/parallaxsecond/parsec-client-go/interface/operations/psasignmessage
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaverifyhash
+github.com/parallaxsecond/parsec-client-go/interface/operations/psaverifymessage
+github.com/parallaxsecond/parsec-client-go/interface/requests
+github.com/parallaxsecond/parsec-client-go/parsec
+github.com/parallaxsecond/parsec-client-go/parsec/algorithm
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
+# github.com/rcrowley/go-metrics v0.0.0-20200313005456-10cdbea86bc0
+github.com/rcrowley/go-metrics
+# github.com/shirou/gopsutil v2.20.9+incompatible
+github.com/shirou/gopsutil/cpu
+github.com/shirou/gopsutil/host
+github.com/shirou/gopsutil/internal/common
+github.com/shirou/gopsutil/mem
+github.com/shirou/gopsutil/net
+github.com/shirou/gopsutil/process
+# github.com/sirupsen/logrus v1.8.1
+github.com/sirupsen/logrus
+# github.com/speps/go-hashids v2.0.0+incompatible
+github.com/speps/go-hashids
+# go.mozilla.org/pkcs7 v0.0.0-20200128120323-432b2356ecb1
+go.mozilla.org/pkcs7
 # golang.org/x/crypto v0.0.0-20211202192323-5770296d904e
 ## explicit
 golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blake2b
 golang.org/x/crypto/blowfish
 golang.org/x/crypto/chacha20
 golang.org/x/crypto/chacha20poly1305
+golang.org/x/crypto/curve25519
+golang.org/x/crypto/curve25519/internal/field
 golang.org/x/crypto/ed25519
 golang.org/x/crypto/ed25519/internal/edwards25519
 golang.org/x/crypto/internal/poly1305
 golang.org/x/crypto/internal/subtle
 golang.org/x/crypto/ocsp
-# golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
+golang.org/x/crypto/poly1305
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/sys v0.0.0-20211205182925-97ca703d548d
 ## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/plan9
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
 golang.org/x/sys/windows/svc
 golang.org/x/sys/windows/svc/eventlog
 golang.org/x/sys/windows/svc/mgr
-# golang.org/x/time v0.0.0-20200416051211-89c76fbcd5d1
+# golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1
+golang.org/x/term
+# golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
 ## explicit
 golang.org/x/time/rate
+# google.golang.org/protobuf v1.27.1
+google.golang.org/protobuf/encoding/prototext
+google.golang.org/protobuf/encoding/protowire
+google.golang.org/protobuf/internal/descfmt
+google.golang.org/protobuf/internal/descopts
+google.golang.org/protobuf/internal/detrand
+google.golang.org/protobuf/internal/encoding/defval
+google.golang.org/protobuf/internal/encoding/messageset
+google.golang.org/protobuf/internal/encoding/tag
+google.golang.org/protobuf/internal/encoding/text
+google.golang.org/protobuf/internal/errors
+google.golang.org/protobuf/internal/filedesc
+google.golang.org/protobuf/internal/filetype
+google.golang.org/protobuf/internal/flags
+google.golang.org/protobuf/internal/genid
+google.golang.org/protobuf/internal/impl
+google.golang.org/protobuf/internal/order
+google.golang.org/protobuf/internal/pragma
+google.golang.org/protobuf/internal/set
+google.golang.org/protobuf/internal/strs
+google.golang.org/protobuf/internal/version
+google.golang.org/protobuf/proto
+google.golang.org/protobuf/reflect/protodesc
+google.golang.org/protobuf/reflect/protoreflect
+google.golang.org/protobuf/reflect/protoregistry
+google.golang.org/protobuf/runtime/protoiface
+google.golang.org/protobuf/runtime/protoimpl
+google.golang.org/protobuf/types/descriptorpb
+google.golang.org/protobuf/types/known/anypb
+google.golang.org/protobuf/types/known/durationpb
+google.golang.org/protobuf/types/known/timestamppb
